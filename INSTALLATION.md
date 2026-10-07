@@ -9,11 +9,11 @@ Il vous faut :
 
 Aucun compte Dat00u ni compte GitHub n'est nécessaire.
 
-Le fichier à installer est **Dat00u-0.9.0.apk**, dans les *Assets* de la [Release 0.9.0](https://github.com/dat00udev-sys/dat00u-distribution/releases/tag/v0.9.0). Les archives « Source code » ne sont pas l'application.
+Le fichier à installer est **Dat00u-0.9.1.apk**, dans les *Assets* de la [Release 0.9.1](https://github.com/dat00udev-sys/dat00u-distribution/releases/tag/v0.9.1). Les archives « Source code » ne sont pas l'application.
 
 ## Sur un téléphone ou une tablette
 
-1. Ouvrez la Release dans le navigateur et téléchargez **Dat00u-0.9.0.apk**.
+1. Ouvrez la Release dans le navigateur et téléchargez **Dat00u-0.9.1.apk**.
 2. Ouvrez le fichier téléchargé. Si Android le demande, autorisez l'installation depuis ce navigateur ; le nom du réglage varie selon l'appareil.
 3. Confirmez l'installation, puis ouvrez **Dat00u** et ajoutez votre source.
 
@@ -23,13 +23,13 @@ Les TV n'ont en général pas de navigateur. Choisissez l'une de ces méthodes :
 
 - **Avec l'application Downloader** (disponible dans les boutiques Google TV et Amazon) :
   1. tapez l'adresse du fichier :
-     `https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.9.0/Dat00u-0.9.0.apk`
+     `https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.9.1/Dat00u-0.9.1.apk`
   2. autorisez Downloader à installer des applications quand la TV le demande ;
   3. confirmez l'installation.
 - **Depuis un ordinateur, avec le débogage activé sur la TV :**
   ```
   adb connect <adresse IP de la TV>
-  adb install Dat00u-0.9.0.apk
+  adb install Dat00u-0.9.1.apk
   ```
 
 ## Mettre à jour sans perdre vos données
@@ -47,5 +47,5 @@ L'application « Dat00u (dev) » est réservée aux tests. Elle est distincte et
 Le fichier `SHA256SUMS.txt` contient l'empreinte de chaque APK. Pour la contrôler sous PowerShell :
 
 ```powershell
-Get-FileHash .\Dat00u-0.9.0.apk -Algorithm SHA256
+Get-FileHash .\Dat00u-0.9.1.apk -Algorithm SHA256
 ```

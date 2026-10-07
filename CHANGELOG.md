@@ -1,5 +1,11 @@
 # Nouveautés de Dat00u
 
+## 0.9.1 — contrôle des mises à jour
+
+- **Mises à jour :** cette version sert à vérifier que la mise à jour automatique fonctionne depuis la 0.9.0. Aucun changement visible ; vos sources, favoris et réglages sont conservés.
+
+**English — 0.9.1:** update check release, no visible change.
+
 ## 0.9.0 — première version distribuée
 
 - **Mises à jour :** l'application vous prévient quand une nouvelle version est disponible. Sur TV, elle la télécharge et l'installe elle-même. Une section « Mises à jour » est ajoutée dans Réglages › À propos.
