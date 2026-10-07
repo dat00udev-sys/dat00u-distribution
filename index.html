@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dat00u — Télécharger</title>
+<meta name="description" content="Dat00u, lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, box Android, téléphones et tablettes.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#070F19">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%23070F19'/%3E%3Cpath d='M23 16h50a11 11 0 0 1 11 11v28a11 11 0 0 1-11 11H23a11 11 0 0 1-11-11V27a11 11 0 0 1 11-11z' fill='none' stroke='%23EAF0F6' stroke-width='8'/%3E%3Cpath d='M40 29l20 12-20 12z' fill='%23EAF0F6'/%3E%3Crect x='12' y='74' width='22' height='9' rx='4.5' fill='%23378ADD'/%3E%3Crect x='37' y='74' width='22' height='9' rx='4.5' fill='%23E24B4A'/%3E%3Crect x='62' y='74' width='22' height='9' rx='4.5' fill='%231D9E75'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#070F19;--card:#0E1A27;--line:#22364A;--text:#F6FAFF;--muted:#B3C3D3;--accent:#38C9FF;--home:#378ADD;--live:#E24B4A;--movies:#EF9F27;--series:#7F77DD;--fav:#D4537E;--guide:#1D9E75}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Arabic",sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{display:flex;align-items:center;gap:12px;padding:24px 0}
+header strong{font-size:24px;color:var(--accent);letter-spacing:.2px}
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:center;padding:24px 0 40px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.1;margin:0 0 16px}
+.lead{color:var(--muted);font-size:18px;margin:0 0 24px}
+.button{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:19px;padding:16px 28px;border-radius:14px;outline-offset:4px}
+.button:hover{filter:brightness(1.08)}
+.button:focus-visible{outline:3px solid var(--text)}
+.meta{color:var(--muted);font-size:14px;margin:12px 0 0}
+.notes{margin:20px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--muted);font-size:15px}
+.notes b{color:var(--text)}
+.screen{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.tab{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tab::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;background:var(--c)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.tile{aspect-ratio:16/10;border-radius:10px;background:var(--c);opacity:.85}
+h2{font-size:24px;margin:0 0 16px}
+section{padding:28px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{margin:0 0 10px;font-size:18px;display:flex;align-items:center;gap:10px}
+.card ol,.card ul{margin:0;padding-left:20px;color:var(--muted)}
+.card li{margin:4px 0}
+.card p{color:var(--muted);margin:0 0 10px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+code.addr{display:block;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--accent);font-size:15px;word-break:break-all;margin:8px 0 10px}
+.qr{display:flex;gap:16px;align-items:center}
+.qr svg{width:132px;height:132px;flex:none;border-radius:10px}
+.warn{border-color:#5A4316}
+.small{font-size:14px;color:var(--muted)}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+[dir=rtl]{text-align:right}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:24px;padding-top:8px}.button{width:100%;justify-content:center}.qr{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <svg width="44" height="44" viewBox="0 0 96 96" aria-hidden="true"><path d="M23 16h50a11 11 0 0 1 11 11v28a11 11 0 0 1-11 11H23a11 11 0 0 1-11-11V27a11 11 0 0 1 11-11z" fill="none" stroke="#EAF0F6" stroke-width="8"/><path d="M40 29l20 12-20 12z" fill="#EAF0F6"/><rect x="12" y="74" width="22" height="9" rx="4.5" fill="#378ADD"/><rect x="37" y="74" width="22" height="9" rx="4.5" fill="#E24B4A"/><rect x="62" y="74" width="22" height="9" rx="4.5" fill="#1D9E75"/></svg>
+  <strong>Dat00u</strong>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>Votre télévision.<br>Tout simplement.</h1>
+    <p class="lead">Lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, box Android, téléphones et tablettes.</p>
+    <a class="button" id="download" href="https://github.com/dat00udev-sys/dat00u-distribution/releases/latest">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>
+      <span id="download-label">Télécharger Dat00u</span>
+    </a>
+    <p class="meta" id="meta">Fichier APK · Android 8 et suivants · Français, English, العربية</p>
+    <p class="notes" id="notes" hidden></p>
+  </div>
+  <div class="screen" aria-hidden="true">
+    <div class="tabs">
+      <span class="tab" style="--c:var(--home)">Accueil</span><span class="tab" style="--c:var(--live)">Direct</span><span class="tab" style="--c:var(--movies)">Films</span><span class="tab" style="--c:var(--series)">Séries</span><span class="tab" style="--c:var(--fav)">Favoris</span>
+    </div>
+    <div class="tiles">
+      <div class="tile" style="--c:var(--live)"></div><div class="tile" style="--c:var(--home)"></div><div class="tile" style="--c:var(--guide)"></div>
+      <div class="tile" style="--c:var(--movies)"></div><div class="tile" style="--c:var(--series)"></div><div class="tile" style="--c:var(--fav)"></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>Installer</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><span class="dot" style="--c:var(--home)"></span>Sur téléphone ou tablette</h3>
+      <ol>
+        <li>Touchez <b>Télécharger Dat00u</b> sur cette page.</li>
+        <li>Ouvrez le fichier téléchargé. Si Android le demande, autorisez l'installation.</li>
+        <li>Ouvrez <b>Dat00u</b> et ajoutez votre source.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3><span class="dot" style="--c:var(--live)"></span>Sur TV, Fire TV ou box</h3>
+      <ol>
+        <li>Installez l'app <b>Downloader</b> depuis la boutique de la TV.</li>
+        <li>Dans Downloader, tapez cette adresse :<code class="addr">dat00udev-sys.github.io/dat00u-distribution</code></li>
+        <li>Choisissez <b>Télécharger Dat00u</b>, autorisez l'installation quand la TV le demande, puis confirmez.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3><span class="dot" style="--c:var(--guide)"></span>Ouvrir cette page sur un téléphone</h3>
+      <div class="qr">
+        <svg role="img" aria-label="QR code de cette page" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" class="segno"><path fill="#f6faff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#070f19" d="M2 2.5h7m3 0h1m1 0h1m3 0h1m1 0h2m2 0h2m2 0h7m-33 1h1m5 0h1m3 0h1m4 0h1m2 0h1m1 0h2m2 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m6 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h8m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m2 0h2m4 0h1m2 0h3m1 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m3 0h1m1 0h1m1 0h7m-25 1h1m1 0h5m3 0h1m2 0h2m2 0h1m1 0h2m1 0h1m3 0h5m-29 1h2m1 0h1m1 0h4m1 0h2m3 0h5m1 0h2m1 0h2m1 0h2m1 0h1m-31 1h2m2 0h1m1 0h2m3 0h3m1 0h1m2 0h1m3 0h3m1 0h1m1 0h2m-32 1h1m2 0h1m6 0h2m1 0h1m3 0h2m2 0h1m2 0h2m2 0h3m-31 1h1m3 0h4m1 0h3m2 0h3m2 0h1m2 0h1m2 0h1m1 0h3m1 0h1m-32 1h1m1 0h2m3 0h3m5 0h1m2 0h2m1 0h3m2 0h2m2 0h3m-33 1h1m1 0h3m1 0h3m1 0h3m1 0h4m3 0h2m1 0h3m2 0h3m-32 1h1m1 0h2m3 0h2m1 0h1m3 0h2m3 0h3m3 0h2m2 0h2m-30 1h1m1 0h4m1 0h1m2 0h3m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h3m2 0h1m-33 1h1m2 0h1m1 0h1m1 0h1m1 0h2m5 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-33 1h1m2 0h1m1 0h4m2 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h2m1 0h2m-30 1h1m2 0h1m9 0h2m2 0h1m1 0h2m4 0h6m-32 1h3m1 0h4m1 0h1m2 0h3m2 0h1m3 0h1m2 0h1m2 0h2m1 0h2m-33 1h4m3 0h3m2 0h1m2 0h3m1 0h5m2 0h1m2 0h2m1 0h1m-33 1h1m1 0h1m3 0h2m1 0h1m1 0h2m1 0h1m3 0h1m1 0h3m2 0h1m1 0h1m2 0h2m-32 1h1m1 0h4m2 0h1m1 0h3m1 0h1m1 0h1m2 0h6m2 0h1m2 0h1m-31 1h1m1 0h1m1 0h4m3 0h1m1 0h1m2 0h2m1 0h2m1 0h1m1 0h6m1 0h1m-24 1h1m1 0h1m1 0h2m2 0h2m1 0h6m3 0h1m1 0h1m1 0h1m-33 1h7m6 0h3m1 0h1m2 0h5m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h2m2 0h2m1 0h1m1 0h2m1 0h2m1 0h2m3 0h5m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h6m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h4m1 0h3m2 0h1m1 0h3m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h3m3 0h1m1 0h1m1 0h1m1 0h2m2 0h1m-31 1h1m5 0h1m2 0h2m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m-31 1h7m1 0h1m3 0h1m1 0h2m1 0h1m1 0h1m3 0h3m1 0h1m1 0h1m1 0h1"/></svg>
+        <p>Scannez ce code avec l'appareil photo du téléphone pour ouvrir cette page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Bon à savoir</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><span class="dot" style="--c:var(--series)"></span>Mises à jour automatiques</h3>
+      <p>Dat00u vous prévient quand une nouvelle version existe. Sur TV, il la télécharge et l'installe lui-même.</p>
+      <p>Installez toujours <b>par-dessus</b>, sans désinstaller : vos sources, favoris et réglages sont conservés.</p>
+    </div>
+    <div class="card">
+      <h3><span class="dot" style="--c:var(--fav)"></span>Vos données restent chez vous</h3>
+      <p>Vos identifiants sont chiffrés sur l'appareil. Aucun compte, aucune publicité, aucune statistique.</p>
+      <p>L'app contacte seulement vos sources, et ce site pour vérifier les mises à jour.</p>
+    </div>
+    <div class="card warn">
+      <h3><span class="dot" style="--c:var(--movies)"></span>Aucune chaîne fournie</h3>
+      <p>Dat00u ne fournit ni chaîne, ni film, ni série. Il lit seulement la source que vous ajoutez : abonnement Xtream, lien ou fichier M3U.</p>
+      <p>Utilisez uniquement une source à laquelle vous avez droit.</p>
+    </div>
+  </div>
+  <p class="small" id="verify">Pour vérifier le fichier, comparez son empreinte avec <a href="https://github.com/dat00udev-sys/dat00u-distribution/releases/latest">SHA256SUMS.txt</a> dans la version publiée.</p>
+</section>
+
+<section class="langs">
+  <div class="card" lang="en">
+    <h3>English</h3>
+    <p>Dat00u is a free, ad-free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It provides no content: it plays only the source you add. On a TV, install the Downloader app and type <b>dat00udev-sys.github.io/dat00u-distribution</b>.</p>
+  </div>
+  <div class="card" lang="ar" dir="rtl">
+    <h3>العربية</h3>
+    <p>‏Dat00u مشغّل IPTV مجاني وبدون إعلانات لأجهزة Android TV وGoogle TV وFire TV وأجهزة Android والهواتف واللوحيات. لا يوفّر أي محتوى، بل يشغّل المصدر الذي تضيفه فقط. على التلفاز، ثبّت تطبيق Downloader واكتب العنوان أعلاه.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>Dat00u</span>
+  <a href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/INSTALLATION.md">Guide d'installation</a>
+  <a href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/CHANGELOG.md">Nouveautés</a>
+  <a href="https://github.com/dat00udev-sys/dat00u-distribution/releases">Toutes les versions</a>
+  <a href="https://github.com/dat00udev-sys/dat00u-distribution/issues">Signaler un problème</a>
+</footer>
+</div>
+
+<script>
+// The button always follows the published version: it reads versions.json (served next to this page). Display only:
+// the signature is checked by the app, not here. Without the file, the button keeps its link to the latest Release.
+(function(){
+  var allowed=/^https:\/\/github\.com\/dat00udev-sys\/dat00u-distribution\/releases\/download\/[A-Za-z0-9._-]{1,100}\/[A-Za-z0-9._-]{1,150}\.apk$/;
+  fetch("versions.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(envelope){
+    var bytes=Uint8Array.from(atob(envelope.payload),function(c){return c.charCodeAt(0);});
+    var m=JSON.parse(new TextDecoder("utf-8").decode(bytes));
+    var latest=m.latest||{};
+    if(!allowed.test(latest.apkUrl||""))return;
+    var version=String(latest.versionName||"").slice(0,40);
+    document.getElementById("download").href=latest.apkUrl;
+    document.getElementById("download-label").textContent="Télécharger Dat00u "+version;
+    document.getElementById("meta").textContent="Version "+version+" · Fichier APK · Android 8 et suivants · Français, English, العربية";
+    var notes=latest.notes&&(latest.notes.fr||latest.notes["default"]);
+    if(notes){var p=document.getElementById("notes");p.textContent="";var b=document.createElement("b");b.textContent="Nouveautés : ";p.appendChild(b);p.appendChild(document.createTextNode(String(notes).slice(0,400)));p.hidden=false;}
+    var tag=latest.apkUrl.split("/").slice(-2,-1)[0];
+    document.querySelector("#verify a").href="https://github.com/dat00udev-sys/dat00u-distribution/releases/download/"+tag+"/SHA256SUMS.txt";
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>
