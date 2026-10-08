@@ -1,12 +1,12 @@
-# Dat00u
+# Zaphir — by dat00u
 
 **Votre télévision. Tout simplement.**
 
-Dat00u est un lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, les box Android, les téléphones et les tablettes.
+Zaphir (by dat00u, anciennement Dat00u) est un lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, les box Android, les téléphones et les tablettes.
 
 **L'application ne fournit aucune chaîne, aucun film ni aucune série.** Elle lit seulement la source que vous ajoutez vous-même : abonnement Xtream, lien ou fichier M3U. Utilisez uniquement une source à laquelle vous avez droit.
 
-Version disponible : **0.9.2 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.9.2/Dat00u-0.9.2.apk). Aucun compte GitHub n'est nécessaire.
+Version disponible : **0.10.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.10.0/Zaphir-0.10.0.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 
@@ -15,7 +15,7 @@ Version disponible : **0.9.2 · Android 8 et suivants · Français, English, ا�
 | Écran | À quoi il sert |
 |---|---|
 | Accueil | Reprendre un film ou un épisode, retrouver favoris et chaînes récentes. |
-| Direct | Parcourir les chaînes par dossier et changer de chaîne sans couper l'image. Le menu de la chaîne affiche les programmes du jour. |
+| TV | Parcourir les chaînes par dossier et changer de chaîne sans couper l'image. Le menu de la chaîne affiche les programmes du jour. |
 | Films et Séries | Dossiers en liste ou en mosaïque, fiches avec saisons et épisodes, reprise de lecture. |
 | Favoris | Vos chaînes, films et séries préférés au même endroit. |
 | Réglages | Langue, thème, ordre et visibilité des dossiers, contrôle parental, sources. |
@@ -41,4 +41,4 @@ Pour signaler un problème, ouvrez une issue en indiquant :
 
 **Ne joignez jamais un identifiant, un mot de passe ni l'adresse de votre source.**
 
-**English:** Dat00u is a free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It provides no content: it only plays the source you add yourself. French, English and Arabic.
+**English:** Zaphir is a free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It provides no content: it only plays the source you add yourself. French, English and Arabic.

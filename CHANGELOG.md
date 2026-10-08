@@ -1,4 +1,16 @@
-# Nouveautés de Dat00u
+# Nouveautés de Zaphir (anciennement Dat00u)
+
+## 0.10.0 — Dat00u devient Zaphir
+
+- **Nouvelle identité :** l'application s'appelle **Zaphir**, signée *by dat00u*, avec un nouveau logo Z. C'est la même application : la mise à jour s'installe par-dessus, vos sources, favoris et réglages sont conservés.
+- **Thèmes :** deux thèmes soignés, **Ardoise** (par défaut, gris-bleu lumineux) et **Clair**. Si vous utilisiez un ancien thème, l'application choisit automatiquement le plus proche.
+- **Accueil :** une grande image avec « Regarder » et « Détails », la rangée « Reprendre » avec le temps restant, puis vos favoris.
+- **Navigation :** menu en haut (Accueil, TV, Films, Séries, Favoris), sélection entourée de menthe, bien visible à la télécommande.
+- **TV :** chaînes sur 3 colonnes, repère « EN DIRECT » rouge ; dans la vue réduite, un seul Retour ramène à la mosaïque sur la chaîne regardée.
+- **Sécurité :** les mises à jour sont vérifiées par leur empreinte avant installation ; les erreurs de code PIN sont comptées même après la fermeture de l'application ; l'ajout d'une source depuis le téléphone est mieux protégé.
+- **Textes :** « 1 chaîne / 15 chaînes » et les formes arabes correctes.
+
+**English — 0.10.0:** Dat00u becomes Zaphir (by dat00u): new logo, Slate and Light themes, new home screen, clearer remote navigation, red LIVE marker, fingerprint-checked updates, stronger PIN and phone-link protection.
 
 ## 0.9.2 — thèmes et fluidité
 
