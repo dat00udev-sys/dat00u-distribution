@@ -6,7 +6,7 @@ Dat00u est un lecteur IPTV gratuit et sans publicité pour Android TV, Google TV
 
 **L'application ne fournit aucune chaîne, aucun film ni aucune série.** Elle lit seulement la source que vous ajoutez vous-même : abonnement Xtream, lien ou fichier M3U. Utilisez uniquement une source à laquelle vous avez droit.
 
-Version disponible : **0.9.1 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.9.1/Dat00u-0.9.1.apk). Aucun compte GitHub n'est nécessaire.
+Version disponible : **0.9.2 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.9.2/Dat00u-0.9.2.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 

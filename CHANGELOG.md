@@ -1,5 +1,21 @@
 # Nouveautés de Dat00u
 
+## 0.9.2 — thèmes et fluidité
+
+- **Thèmes :** cinq thèmes dans Réglages › Apparence.
+  - **Dat00u sombre :** celui d'avant.
+  - **Aurore :** fond sombre avec halos de couleur, boutons arrondis.
+  - **Cinéma :** l'affiche du film ou de la série sélectionnée remplit le fond.
+  - **Studio clair :** thème clair, sélection entourée de noir.
+  - **Néon OLED :** noir pur, halo de couleur autour de la sélection.
+  - Le lecteur reste sombre dans tous les thèmes. Si vous aviez Noir OLED, Graphite ou Bleu nuit, l'application choisit le thème le plus proche.
+- **Télécommande :** le focus arrive toujours au bon endroit (menu, dossiers, grilles) et ne se perd plus après une action ; le lecteur réduit du direct est atteignable, OK le passe en plein écran.
+- **Dossiers :** chaque dossier a son menu (déplacer, épingler, masquer) et la sélection multiple permet d'agir sur plusieurs à la fois.
+- **Mises à jour :** une fenêtre au milieu de l'écran annonce la nouvelle version au démarrage ; la vérification manuelle garde le focus et affiche le résultat sur place.
+- **Fluidité :** moins de calculs à chaque déplacement dans les grilles.
+
+**English — 0.9.2:** five themes (Dat00u dark, Aurora, Cinema, Light studio, Neon OLED), better remote focus, folder menus with multiple selection, centered update window, smoother grids.
+
 ## 0.9.1 — contrôle des mises à jour
 
 - **Mises à jour :** cette version sert à vérifier que la mise à jour automatique fonctionne depuis la 0.9.0. Aucun changement visible ; vos sources, favoris et réglages sont conservés.
