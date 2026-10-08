@@ -1,5 +1,16 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.11.1 — plus de logos reconnus
+
+- **Logos :** l'annuaire public passe désormais en premier ; le logo de votre abonnement ne sert que si l'annuaire ne connaît pas la chaîne. Réglages › Apparence › « Logos depuis internet ».
+- **Plus de chaînes reconnues :**
+  - un mot courant en moins : « beIN News » trouve « beIN Sports News » ;
+  - un numéro que l'annuaire ne connaît pas prend le logo de sa famille : « beIN SPORT 9 » prend celui de beIN Sports ;
+  - la langue ou le pays autour du nom : « beIN SPORTS 1 Arabic », « FR TF1 », « TF1 FR » ;
+  - les noms écrits dans une autre langue : « Tunisia nat 1 » trouve El Watania 1.
+
+**English — 0.11.1:** the public logo directory now comes first and recognises more channels (beIN, Arabic and Maghreb channels, names written differently).
+
 ## 0.11.0 — logos des chaînes
 
 - **Logos des chaînes :** quand votre abonnement ne donne pas le logo d'une chaîne, ou qu'il ne s'affiche pas, Zaphir le cherche dans un annuaire public de chaînes (iptv-org). Les petites fautes dans les noms sont tolérées (« Canal+ Sprot », « Eurosprot 2 ») ; le pays écrit dans le nom ou le dossier (« FR: », « |AR| ») aide à choisir. Sans correspondance sûre, la chaîne garde ses initiales. Réglages › Apparence › « Logos manquants depuis internet » permet de le couper.
