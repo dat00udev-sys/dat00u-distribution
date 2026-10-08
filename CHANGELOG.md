@@ -1,5 +1,15 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.11.0 — logos des chaînes
+
+- **Logos des chaînes :** quand votre abonnement ne donne pas le logo d'une chaîne, ou qu'il ne s'affiche pas, Zaphir le cherche dans un annuaire public de chaînes (iptv-org). Les petites fautes dans les noms sont tolérées (« Canal+ Sprot », « Eurosprot 2 ») ; le pays écrit dans le nom ou le dossier (« FR: », « |AR| ») aide à choisir. Sans correspondance sûre, la chaîne garde ses initiales. Réglages › Apparence › « Logos manquants depuis internet » permet de le couper.
+- **Logos :** ils sont posés sur un fond neutre, la couleur est réservée aux initiales.
+- **Thème Ardoise :** plus profond, toujours aussi lisible.
+- **Dossiers :** en sélection multiple, les dossiers déplacés restent visibles sous la barre d'actions et la sélection n'est plus perdue. Au téléphone, le dossier en déplacement a ses boutons ▲ ▼ ✓.
+- **TV :** dans la vue réduite, Retour remonte d'abord au choix du dossier, puis à la mosaïque.
+
+**English — 0.11.0:** channel logos found automatically when your subscription has none (spelling mistakes tolerated), deeper Slate theme, easier folder moving (touch buttons on phones), Back in reduced live TV goes to the folder choice first.
+
 ## 0.10.0 — Dat00u devient Zaphir
 
 - **Nouvelle identité :** l'application s'appelle **Zaphir**, signée *by dat00u*, avec un nouveau logo Z. C'est la même application : la mise à jour s'installe par-dessus, vos sources, favoris et réglages sont conservés.
