@@ -1,12 +1,14 @@
 # Zaphir — by dat00u
 
-**Votre télévision. Tout simplement.**
+![Zaphir — Zappez, trouvez votre saphir. — by dat00u](zaphir-logo.png)
+
+**Zappez, trouvez votre saphir.**
 
 Zaphir (by dat00u, anciennement Dat00u) est un lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, les box Android, les téléphones et les tablettes.
 
 **L'application ne fournit aucune chaîne, aucun film ni aucune série.** Elle lit seulement la source que vous ajoutez vous-même : abonnement Xtream, lien ou fichier M3U. Utilisez uniquement une source à laquelle vous avez droit.
 
-Version disponible : **0.13.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.13.0/Zaphir-0.13.0.apk). Aucun compte GitHub n'est nécessaire.
+Version disponible : **0.14.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.14.0/Zaphir-0.14.0.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 

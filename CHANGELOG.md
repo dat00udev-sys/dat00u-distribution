@@ -1,5 +1,15 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.14.0 — nouveau logo, image figée
+
+- **Nouveau logo :** un Z à facettes, menthe et bleu saphir, autour d'un triangle de lecture, et le slogan **« Zappez, trouvez votre saphir. »**. Il apparaît sur l'icône de l'appli, la bannière Android TV, l'écran d'ouverture et le menu. L'écran d'ouverture reste au moins une seconde et demie pour qu'on le voie.
+- **Image figée :** quand une chaîne charge sans fin, s'arrête ou garde la même image alors que le son continue, la qualité suivante prend le relais toute seule (« Image figée : passage en HD ») ; une chaîne en une seule qualité est relancée au direct. Au plus trois fois par minute, puis le message d'erreur habituel. Réglages › Direct et guide › « Changer de qualité si l'image se fige ».
+- **Fenêtres :** plus fines, en verre, avec des boutons arrondis ; seul le bouton sélectionné est coloré, on ne peut plus confondre « Rester » et « Quitter ». Une action risquée (retirer une source…) ne devient rouge qu'au moment où on la sélectionne.
+- **Messages :** une fine capsule centrée avec un point de couleur (vert, ambre, rouge, bleu) ; pendant une vidéo, elle s'affiche en haut pour ne pas cacher le lecteur.
+- **Petit lecteur :** « Reconnexion » s'affiche dans une capsule sur l'image ; quand une chaîne ne répond plus, l'image s'assombrit avec un message court.
+
+**English — 0.14.0:** new faceted Z logo and slogan, automatic quality switch when the picture freezes (or a restart), finer dialogs where only the focused button is filled, thin message capsules, cleaner messages in the small player.
+
 ## 0.13.0 — un lecteur modernisé
 
 - **Barre en verre :** à chaque changement de chaîne, une barre discrète en bas de l'image montre le logo, le numéro, la qualité (FHD, HD…) et l'heure.
