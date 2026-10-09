@@ -1,5 +1,20 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.13.0 — un lecteur modernisé
+
+- **Barre en verre :** à chaque changement de chaîne, une barre discrète en bas de l'image montre le logo, le numéro, la qualité (FHD, HD…) et l'heure.
+  - Avec le guide des programmes : le programme en cours, jusqu'à quelle heure, et la suite.
+  - Sans guide, le cas le plus courant : le dossier et la position (« 2/7 »), l'image et le son du flux (« 1080p · Stéréo »), et les chaînes vers lesquelles mènent ↑ et ↓.
+- **Commandes :** OK agrandit la même barre avec Pause, Favori et, si la chaîne en a un, le Guide ; à droite, des boutons ronds pour l'audio, les sous-titres, la qualité et les réglages.
+- **Panneau de réglages :** audio, sous-titres, qualité, format d'image (et vitesse pour les films) dans un seul panneau à droite ; ← / → changent d'onglet, l'image reste visible.
+- **Films et séries :** la même barre, des boutons −10 s / +10 s, et l'heure visée s'affiche au-dessus du curseur pendant le déplacement.
+- **Chargement :** le logo de la chaîne et la qualité essayée s'affichent pendant la connexion, au lieu d'un écran noir.
+- **Erreurs :** une carte claire dit quelles qualités ont été essayées, avec « Réessayer » et « Chaîne suivante ».
+- **Repères :** Pause / Lecture et ±10 s s'affichent un instant au milieu de l'image, y compris avec la touche ▶❚❚ de la télécommande.
+- **Correction :** l'indicateur de chargement s'affiche de nouveau après un changement de chaîne.
+
+**English — 0.13.0:** a modernised player: a slim glass bar with logo, quality and clock (programme with a TV guide, folder, stream details and neighbouring channels without one), a side panel for audio, subtitles, quality and picture format, a loading screen with the channel's logo, clear error cards with "Retry" and "Next channel", and on-screen play/pause and ±10 s signs.
+
 ## 0.12.0 — une tuile par chaîne
 
 - **Qualités regroupées :** une chaîne proposée en LOW, SD, HD, FHD ou 4K n'a plus qu'une tuile, avec le nombre de qualités sous son nom. Les dossiers beIN passent par exemple de 65 à 26 tuiles.
