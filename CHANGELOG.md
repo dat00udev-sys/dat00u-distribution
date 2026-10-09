@@ -1,5 +1,19 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.12.0 — une tuile par chaîne
+
+- **Qualités regroupées :** une chaîne proposée en LOW, SD, HD, FHD ou 4K n'a plus qu'une tuile, avec le nombre de qualités sous son nom. Les dossiers beIN passent par exemple de 65 à 26 tuiles.
+  - La meilleure qualité est lancée (FHD, puis HD, 4K, SD, LOW) ; si elle ne passe pas, la suivante prend le relais toute seule (« Passage en HD »).
+  - Le bouton de qualité du lecteur liste les qualités de la chaîne ; le choix est retenu.
+  - Le zapping passe d'une chaîne à l'autre, plus d'une qualité à l'autre.
+  - Ne sont jamais regroupées : une autre langue (« beIN SPORT 1 FR »), un décalage (« TF1+1 ») ou un autre numéro.
+- **Dossiers de qualité :** les dossiers « … HD / FHD / 4K » que l'appli remplissait elle-même ne sont plus remplis : ils répétaient le dossier complet.
+- **Favoris et récents :** une chaîne mise en favori dans une qualité s'affiche sur la tuile regroupée.
+- **Réglage :** Réglages › Direct et guide › « Regrouper les qualités » (activé par défaut) pour revenir à l'ancien affichage.
+- **Tuiles sans logo :** initiales plus lisibles sur les petites tuiles.
+
+**English — 0.12.0:** one tile per channel: LOW/SD/HD/FHD/4K qualities are grouped, the best one plays and the next takes over if it fails, quality menu in the player, quality folders no longer duplicated, favourites follow the grouped tile.
+
 ## 0.11.2 — logos, réglés sur un vrai abonnement
 
 - **Beaucoup plus de logos reconnus**, avec des règles mises au point sur un abonnement réel de 1 500 chaînes :
