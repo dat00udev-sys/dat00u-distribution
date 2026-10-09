@@ -1,5 +1,18 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.11.2 — logos, réglés sur un vrai abonnement
+
+- **Beaucoup plus de logos reconnus**, avec des règles mises au point sur un abonnement réel de 1 500 chaînes :
+  - le chiffre collé à la qualité (« Arryadia 1HD ») et « Sport » ou « Sports » ;
+  - la plateforme devant le nom (« OSN ART AFLAM 1 »), les noms plus longs dans l'annuaire (« beIN MOVIES 2 » est « beIN Movies 2 Action ») ;
+  - les noms arabes écrits autrement (« Kuwait TV 1 » est KTV 1, « janoubia », « Zaytoona », « Al Hiwar Al Tunisi ») ;
+  - la version d'un pays (« Rotana Cinema » prend Rotana Cinema KSA ou Egypt).
+- **Moins d'erreurs :** le pays du dossier ou du nom doit correspondre (une chaîne syrienne ne prend plus le logo d'une chaîne saoudienne), et une faute n'est tolérée qu'après le début du nom (« MBC » n'est jamais « MNC »).
+- **Logo de la marque en dernier recours :** « Roya Sport » prend le logo de Roya TV, « TF1+1 » celui de TF1, « CANAL+ LIVE 9 » celui de Canal+.
+- **Sans aucun logo :** une tuile neutre avec le nom de la chaîne écrit en entier et un liseré menthe remplace les initiales sur fond de couleur.
+
+**English — 0.11.2:** many more channel logos recognised (tuned on a real 1,500-channel subscription), fewer wrong logos, the brand's logo as a last resort, and a neat name tile when there is no logo.
+
 ## 0.11.1 — plus de logos reconnus
 
 - **Logos :** l'annuaire public passe désormais en premier ; le logo de votre abonnement ne sert que si l'annuaire ne connaît pas la chaîne. Réglages › Apparence › « Logos depuis internet ».
