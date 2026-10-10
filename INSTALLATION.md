@@ -9,11 +9,11 @@ Il vous faut :
 
 Aucun compte Zaphir ni compte GitHub n'est nécessaire.
 
-Le fichier à installer est **Zaphir-0.15.0.apk**, dans les *Assets* de la [Release 0.15.0](https://github.com/dat00udev-sys/dat00u-distribution/releases/tag/v0.15.0). Les archives « Source code » ne sont pas l'application.
+Le fichier à installer est **Zaphir-0.16.0.apk**, dans les *Assets* de la [Release 0.16.0](https://github.com/dat00udev-sys/dat00u-distribution/releases/tag/v0.16.0). Les archives « Source code » ne sont pas l'application.
 
 ## Sur un téléphone ou une tablette
 
-1. Ouvrez la Release dans le navigateur et téléchargez **Zaphir-0.15.0.apk**.
+1. Ouvrez la Release dans le navigateur et téléchargez **Zaphir-0.16.0.apk**.
 2. Ouvrez le fichier téléchargé. Si Android le demande, autorisez l'installation depuis ce navigateur ; le nom du réglage varie selon l'appareil.
 3. Confirmez l'installation, puis ouvrez **Zaphir** et ajoutez votre source.
 
@@ -23,13 +23,13 @@ Les TV n'ont en général pas de navigateur. Choisissez l'une de ces méthodes :
 
 - **Avec l'application Downloader** (disponible dans les boutiques Google TV et Amazon) :
   1. tapez l'adresse du fichier :
-     `https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.15.0/Zaphir-0.15.0.apk`
+     `https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.16.0/Zaphir-0.16.0.apk`
   2. autorisez Downloader à installer des applications quand la TV le demande ;
   3. confirmez l'installation.
 - **Depuis un ordinateur, avec le débogage activé sur la TV :**
   ```
   adb connect <adresse IP de la TV>
-  adb install Zaphir-0.15.0.apk
+  adb install Zaphir-0.16.0.apk
   ```
 
 ## Mettre à jour sans perdre vos données
@@ -47,5 +47,5 @@ L'application « Zaphir (dev) » est réservée aux tests. Elle est distincte et
 Le fichier `SHA256SUMS.txt` contient l'empreinte de chaque APK. Pour la contrôler sous PowerShell :
 
 ```powershell
-Get-FileHash .\Zaphir-0.15.0.apk -Algorithm SHA256
+Get-FileHash .\Zaphir-0.16.0.apk -Algorithm SHA256
 ```

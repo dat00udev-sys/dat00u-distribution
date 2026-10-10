@@ -1,5 +1,18 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.16.0 — une liste des chaînes plus simple
+
+- **Retour remonte d'un étage (TV) :** on ne se perd plus dans la liste des chaînes.
+  - Une chaîne s'ouvre avec son bandeau (nom, qualité, programme) ; **OK** ouvre le menu de la chaîne (pause, programmes, favori, qualité, audio, sous-titres, réglages).
+  - **Retour** ferme le menu, puis ouvre la liste des chaînes sur la chaîne regardée, puis la liste des dossiers ; un dernier **Retour** ramène à la mosaïque.
+  - Dans les dossiers, ↑ ↓ montrent tout de suite les chaînes de chaque dossier ; **OK** ou → y entre. En haut de la liste, « ‹ Dossiers · Sport · 2/11 » dit où l'on est.
+  - ← ouvre toujours la liste en plein écran, et les dossiers depuis la liste. ← → ne font plus défiler les dossiers un par un.
+  - Fermer la liste sans choisir de chaîne ne change pas de dossier : elle se rouvre toujours sur la chaîne regardée.
+- **Bandeau :** après la liste, le bandeau de la nouvelle chaîne s'affiche seul, sans rouvrir les boutons.
+- **Site :** la page de téléchargement reprend le logo, le slogan et les couleurs de l'appli.
+
+**English — 0.16.0:** on TV, Back now climbs one level at a time: channel menu, picture, channel list, folders, then the mosaic. Folders are listed beside the channels and previewed as you move; ← → no longer cycle through folders one by one. The download page now uses the app's logo and colours.
+
 ## 0.15.0 — la liste des chaînes sur l'image
 
 - **Liste des chaînes sur l'image (TV) :** une chaîne s'ouvre directement en plein écran, avec la liste de son dossier par-dessus l'image, sur un quart de l'écran. Elle remplace la vue réduite (vidéo en petit à côté de la liste).
