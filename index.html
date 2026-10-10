@@ -3,109 +3,219 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zaphir — Télécharger</title>
-<meta name="description" content="Zaphir, lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, box Android, téléphones et tablettes.">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#070F19">
-<meta name="referrer" content="no-referrer">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%23070F19'/%3E%3Cpath d='M23 16h50a11 11 0 0 1 11 11v28a11 11 0 0 1-11 11H23a11 11 0 0 1-11-11V27a11 11 0 0 1 11-11z' fill='none' stroke='%23EAF0F6' stroke-width='8'/%3E%3Cpath d='M40 29l20 12-20 12z' fill='%23EAF0F6'/%3E%3Crect x='12' y='74' width='22' height='9' rx='4.5' fill='%23378ADD'/%3E%3Crect x='37' y='74' width='22' height='9' rx='4.5' fill='%23E24B4A'/%3E%3Crect x='62' y='74' width='22' height='9' rx='4.5' fill='%231D9E75'/%3E%3C/svg%3E">
+<title>Zaphir — Zappez, trouvez votre saphir.</title>
+<meta name="description" content="Zaphir by dat00u : lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, box Android, téléphones et tablettes.">
+<meta name="theme-color" content="#1C2937">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='126 135 1000 1000'%3E%3Cpolygon fill='%2393EFDB' points='186,402 192,377 202,357 259,282 293,251 328,235 355,230 854,230 510,449 188,421'/%3E%3Cpolygon fill='%2371DEC7' points='512,449 854,231 1041,230 825,622'/%3E%3Cpolygon fill='%2385E6D2' points='831,610 1036,241 1048,233 1082,248 1101,270 1112,302 1110,336 1103,352 1060,402 957,505 845,607'/%3E%3Cpolygon fill='%23356790' points='186,422 510,451 541,457 505,785 217,492 193,454'/%3E%3Cpolygon fill='%238AE9D5' points='142,943 156,909 206,847 380,662 505,787 530,842 188,1027 172,1018 152,993 142,966'/%3E%3Cpolygon fill='%234D89B4' points='189,1030 565,824 985,1041 218,1040'/%3E%3Cpolygon fill='%23356790' points='569,822 857,648 1041,817 1085,865'/%3E%3Cpolygon fill='%23295076' points='567,824 702,830 847,842 994,1040 987,1041'/%3E%3Cpolygon fill='%23234569' points='848,842 1086,866 1098,889 1104,915 1102,949 1091,979 1077,999 1051,1022 1018,1037 995,1040'/%3E%3Cpolygon fill='%23FCF9F4' points='507,788 508,488 515,472 526,463 547,459 561,464 841,633 850,643 851,655 843,666 545,834 525,832 513,822 508,811'/%3E%3C/svg%3E">
 <style>
-:root{--bg:#070F19;--card:#0E1A27;--line:#22364A;--text:#F6FAFF;--muted:#B3C3D3;--accent:#38C9FF;--home:#378ADD;--live:#E24B4A;--movies:#EF9F27;--series:#7F77DD;--fav:#D4537E;--guide:#1D9E75}
+/* Same palette as the app (Ardoise theme): slate background, mint accent, one colour per section. */
+:root{
+  --bg:#243344;--bar:#1C2937;--surface:#324456;--raised:#42576B;--player:#1E2B39;
+  --accent:#B9E3D8;--on-accent:#173A44;--text:#FAF7F0;--muted:#D7E1E8;--soft:#A9B8C5;
+  --edge:rgba(255,255,255,.14);--glass:rgba(255,255,255,.07);
+  --home:#378ADD;--live:#E24B4A;--movies:#EF9F27;--series:#7F77DD;--fav:#D4537E;--guide:#1D9E75;
+  --mint1:#93EFDB;--mint2:#71DEC7;--sapphire:#356790;
+}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Arabic",sans-serif}
+html{background:var(--bg)}
+body{margin:0;color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:radial-gradient(1100px 600px at 85% -10%,rgba(113,222,199,.16),transparent 60%),
+             radial-gradient(900px 600px at -10% 20%,rgba(53,103,144,.35),transparent 60%),var(--bg);
+  background-repeat:no-repeat}
 a{color:var(--accent)}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
-header{display:flex;align-items:center;gap:12px;padding:24px 0}
-header strong{font-size:24px;color:var(--accent);letter-spacing:.2px}
-.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:center;padding:24px 0 40px}
-h1{font-size:clamp(34px,6vw,56px);line-height:1.1;margin:0 0 16px}
-.lead{color:var(--muted);font-size:18px;margin:0 0 24px}
-.button{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:19px;padding:16px 28px;border-radius:14px;outline-offset:4px}
-.button:hover{filter:brightness(1.08)}
-.button:focus-visible{outline:3px solid var(--text)}
-.meta{color:var(--muted);font-size:14px;margin:12px 0 0}
-.notes{margin:20px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--muted);font-size:15px}
-.notes b{color:var(--text)}
-.screen{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
-.tab{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
-.tab::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;background:var(--c)}
-.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.tile{aspect-ratio:16/10;border-radius:10px;background:var(--c);opacity:.85}
-h2{font-size:24px;margin:0 0 16px}
-section{padding:28px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Top bar: the app's menu strip */
+.top{position:sticky;top:0;z-index:5;background:rgba(28,41,55,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--edge)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.brand svg{width:34px;height:34px}
+.brand b{font-size:20px;letter-spacing:.2px}
+.brand small{color:var(--soft);font-size:12px;margin-left:2px}
+.nav{margin-left:auto;display:flex;gap:6px}
+.pill{font-size:14px;color:var(--muted);text-decoration:none;padding:7px 14px;border-radius:999px;border:1px solid transparent}
+.pill:hover,.pill:focus-visible{border-color:var(--edge);background:var(--glass);outline:none}
+.pill.get{background:var(--accent);color:var(--on-accent);font-weight:700}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center;padding:64px 0 40px}
+.logo{width:112px;height:112px;filter:drop-shadow(0 18px 40px rgba(113,222,199,.25))}
+h1{font-size:64px;line-height:1;margin:18px 0 6px;letter-spacing:-1.5px}
+.slogan{font-size:24px;margin:0 0 4px;background:linear-gradient(90deg,var(--mint1),#7FB6DE);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600}
+.by{color:var(--soft);font-size:14px;margin:0 0 22px;letter-spacing:.4px}
+.lead{color:var(--muted);font-size:18px;margin:0 0 26px;max-width:520px}
+.button{display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:800;font-size:18px;
+  padding:15px 26px;border-radius:999px;box-shadow:0 10px 30px rgba(185,227,216,.25);transition:transform .15s,box-shadow .15s}
+.button:hover,.button:focus-visible{transform:translateY(-1px);box-shadow:0 0 0 3px var(--bg),0 0 0 6px var(--accent);outline:none}
+.meta{color:var(--soft);font-size:14px;margin:14px 0 0}
+.notes{margin:16px 0 0;padding:12px 16px;border-radius:14px;background:var(--glass);border:1px solid var(--edge);color:var(--muted);font-size:14px;max-width:520px}
+.notes b{color:var(--accent)}
+
+/* TV mockup: the full-screen picture, the channel list over it and the thin glass bar */
+.tv{position:relative;border-radius:18px;padding:10px;background:#0E151D;border:1px solid var(--edge);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.screen{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;
+  background:radial-gradient(60% 80% at 70% 35%,#E7A35A 0,#B4583B 30%,#3E2A3F 62%,#16202B 100%)}
+.screen::before{content:"";position:absolute;inset:0;background:radial-gradient(30% 22% at 72% 40%,rgba(255,240,200,.55),transparent 70%)}
+.list{position:absolute;inset:0 auto 0 0;width:44%;padding:12px 10px;background:linear-gradient(90deg,rgba(18,27,37,.94) 70%,rgba(18,27,37,0))}
+.folder{display:inline-flex;gap:8px;align-items:center;font-size:11px;color:var(--text);padding:4px 10px;border-radius:999px;background:var(--glass);border:1px solid var(--edge);margin:0 0 8px}
+.folder i{font-style:normal;color:var(--soft)}
+.row{display:flex;align-items:center;gap:7px;height:30px;padding:0 7px;border-radius:9px;font-size:11px;color:var(--muted)}
+.row .n{width:14px;color:var(--soft);font-size:10px;text-align:right}
+.row .lg{width:20px;height:20px;border-radius:6px;background:var(--c);flex:none}
+.row.on{background:rgba(185,227,216,.14);color:var(--text);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.row .live{margin-left:auto;width:6px;height:6px;border-radius:50%;background:#FF5A55}
+.bar{position:absolute;left:47%;right:12px;bottom:12px;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;
+  background:rgba(30,43,57,.55);border:1px solid var(--edge);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:11px}
+.bar .ch{font-weight:700}
+.bar .q{font-size:9px;padding:1px 6px;border-radius:5px;background:#FAEEDA;color:#633806;font-weight:700}
+.bar .nx{margin-left:auto;color:var(--soft)}
+.tv-foot{display:flex;gap:6px;justify-content:center;margin-top:12px}
+.tv-foot span{width:40px;height:5px;border-radius:3px;background:var(--c)}
+
+/* Sections */
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 6px;letter-spacing:-.4px}
+.sub{color:var(--soft);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--edge);border-radius:20px;padding:22px;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c,transparent)}
 .card h3{margin:0 0 10px;font-size:18px;display:flex;align-items:center;gap:10px}
+.ic{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 22%,transparent);color:var(--c);flex:none}
+.ic svg{width:19px;height:19px}
 .card ol,.card ul{margin:0;padding-left:20px;color:var(--muted)}
-.card li{margin:4px 0}
+.card li{margin:5px 0}
 .card p{color:var(--muted);margin:0 0 10px}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
-code.addr{display:block;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--accent);font-size:15px;word-break:break-all;margin:8px 0 10px}
+code.addr{display:block;background:var(--bar);border:1px solid var(--edge);border-radius:12px;padding:10px 12px;color:var(--accent);font-size:15px;word-break:break-all;margin:8px 0 10px}
 .qr{display:flex;gap:16px;align-items:center}
-.qr svg{width:132px;height:132px;flex:none;border-radius:10px}
-.warn{border-color:#5A4316}
-.small{font-size:14px;color:var(--muted)}
+.qr svg{width:124px;height:124px;flex:none;border-radius:12px}
+
+/* Features: one tile per section of the app, in its colour */
+.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.feat{border-radius:18px;padding:18px;background:var(--glass);border:1px solid var(--edge)}
+.feat .tag{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--c)}
+.feat .tag::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--c)}
+.feat p{margin:8px 0 0;color:var(--muted);font-size:15px}
+
+.small{font-size:14px;color:var(--soft)}
 .langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 [dir=rtl]{text-align:right}
-footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
-@media (max-width:760px){.hero{grid-template-columns:1fr;gap:24px;padding-top:8px}.button{width:100%;justify-content:center}.qr{flex-direction:column;align-items:flex-start}}
+footer{border-top:1px solid var(--edge);margin-top:20px;padding:26px 0 44px;color:var(--soft);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px}
+footer .brand svg{width:24px;height:24px}
+footer em{font-style:normal;color:var(--muted)}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:34px;padding-top:36px}
+  h1{font-size:48px}.slogan{font-size:20px}
+  .features{grid-template-columns:1fr}
+  .nav .pill:not(.get){display:none}
+  .button{width:100%;justify-content:center}
+  .qr{flex-direction:column;align-items:flex-start}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <svg width="44" height="44" viewBox="0 0 96 96" aria-hidden="true"><path d="M23 16h50a11 11 0 0 1 11 11v28a11 11 0 0 1-11 11H23a11 11 0 0 1-11-11V27a11 11 0 0 1 11-11z" fill="none" stroke="#EAF0F6" stroke-width="8"/><path d="M40 29l20 12-20 12z" fill="#EAF0F6"/><rect x="12" y="74" width="22" height="9" rx="4.5" fill="#378ADD"/><rect x="37" y="74" width="22" height="9" rx="4.5" fill="#E24B4A"/><rect x="62" y="74" width="22" height="9" rx="4.5" fill="#1D9E75"/></svg>
-  <strong>Zaphir</strong>
-</header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="z" viewBox="126 135 1000 1000">
+    <g stroke-width="3" stroke-linejoin="round">
+    <polygon fill="#93EFDB" stroke="#93EFDB" points="186,402 192,377 202,357 259,282 293,251 328,235 355,230 854,230 510,449 188,421"/>
+    <polygon fill="#71DEC7" stroke="#71DEC7" points="512,449 854,231 1041,230 825,622"/>
+    <polygon fill="#85E6D2" stroke="#85E6D2" points="831,610 1036,241 1048,233 1082,248 1101,270 1112,302 1110,336 1103,352 1060,402 957,505 845,607"/>
+    <polygon fill="#356790" stroke="#356790" points="186,422 510,451 541,457 505,785 217,492 193,454"/>
+    <polygon fill="#8AE9D5" stroke="#8AE9D5" points="142,943 156,909 206,847 380,662 505,787 530,842 188,1027 172,1018 152,993 142,966"/>
+    <polygon fill="#4D89B4" stroke="#4D89B4" points="189,1030 565,824 985,1041 218,1040"/>
+    <polygon fill="#356790" stroke="#356790" points="569,822 857,648 1041,817 1085,865"/>
+    <polygon fill="#295076" stroke="#295076" points="567,824 702,830 847,842 994,1040 987,1041"/>
+    <polygon fill="#234569" stroke="#234569" points="848,842 1086,866 1098,889 1104,915 1102,949 1091,979 1077,999 1051,1022 1018,1037 995,1040"/>
+    <polygon fill="#FCF9F4" stroke="#FCF9F4" points="507,788 508,488 515,472 526,463 547,459 561,464 841,633 850,643 851,655 843,666 545,834 525,832 513,822 508,811"/>
+    </g>
+  </symbol>
+</svg>
 
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><svg aria-hidden="true"><use href="#z"/></svg><b>Zaphir</b><small>by dat00u</small></a>
+    <nav class="nav">
+      <a class="pill" href="#installer">Installer</a>
+      <a class="pill" href="#fonctions">L'appli</a>
+      <a class="pill" href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/CHANGELOG.md">Nouveautés</a>
+      <a class="pill get" href="#top-download">Télécharger</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
 <main>
-<div class="hero">
+<div class="hero" id="top-download">
   <div>
-    <h1>Votre télévision.<br>Tout simplement.</h1>
+    <svg class="logo" role="img" aria-label="Logo Zaphir"><use href="#z"/></svg>
+    <h1>Zaphir</h1>
+    <p class="slogan">Zappez, trouvez votre saphir.</p>
+    <p class="by">by dat00u</p>
     <p class="lead">Lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, box Android, téléphones et tablettes.</p>
     <a class="button" id="download" href="https://github.com/dat00udev-sys/dat00u-distribution/releases/latest">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>
       <span id="download-label">Télécharger Zaphir</span>
     </a>
     <p class="meta" id="meta">Fichier APK · Android 8 et suivants · Français, English, العربية</p>
     <p class="notes" id="notes" hidden></p>
   </div>
-  <div class="screen" aria-hidden="true">
-    <div class="tabs">
-      <span class="tab" style="--c:var(--home)">Accueil</span><span class="tab" style="--c:var(--live)">Direct</span><span class="tab" style="--c:var(--movies)">Films</span><span class="tab" style="--c:var(--series)">Séries</span><span class="tab" style="--c:var(--fav)">Favoris</span>
+
+  <div aria-hidden="true">
+    <div class="tv">
+      <div class="screen">
+        <div class="list">
+          <span class="folder">‹ Sport <i>24</i> ›</span>
+          <div class="row"><span class="n">11</span><span class="lg" style="--c:var(--home)"></span>Sport 1</div>
+          <div class="row on"><span class="n">12</span><span class="lg" style="--c:var(--movies)"></span>Sport 2 HD<span class="live"></span></div>
+          <div class="row"><span class="n">13</span><span class="lg" style="--c:var(--guide)"></span>Sport 3</div>
+          <div class="row"><span class="n">14</span><span class="lg" style="--c:var(--series)"></span>Sport Max</div>
+          <div class="row"><span class="n">15</span><span class="lg" style="--c:var(--fav)"></span>Sport Plus</div>
+        </div>
+        <div class="bar"><span class="ch">12 · Sport 2 HD</span><span class="q">HD</span><span class="nx">13 Sport 3 ›</span></div>
+      </div>
     </div>
-    <div class="tiles">
-      <div class="tile" style="--c:var(--live)"></div><div class="tile" style="--c:var(--home)"></div><div class="tile" style="--c:var(--guide)"></div>
-      <div class="tile" style="--c:var(--movies)"></div><div class="tile" style="--c:var(--series)"></div><div class="tile" style="--c:var(--fav)"></div>
-    </div>
+    <div class="tv-foot"><span style="--c:var(--home)"></span><span style="--c:var(--live)"></span><span style="--c:var(--movies)"></span><span style="--c:var(--series)"></span><span style="--c:var(--fav)"></span></div>
   </div>
 </div>
 
-<section>
+<section id="fonctions">
+  <h2>Tout votre contenu, rangé comme il faut</h2>
+  <p class="sub">Pensé pour la télécommande, aussi simple au doigt.</p>
+  <div class="features">
+    <div class="feat" style="--c:var(--live)"><span class="tag">TV</span><p>Chaînes par dossier. En plein écran, la liste s'ouvre par-dessus l'image avec ←, sans quitter la chaîne.</p></div>
+    <div class="feat" style="--c:var(--movies)"><span class="tag">Films</span><p>Dossiers en liste ou en mosaïque, fiches détaillées et reprise de lecture.</p></div>
+    <div class="feat" style="--c:var(--series)"><span class="tag">Séries</span><p>Saisons et épisodes, reprise là où vous vous êtes arrêté.</p></div>
+    <div class="feat" style="--c:var(--fav)"><span class="tag">Favoris</span><p>Chaînes, films et séries préférés au même endroit, et zapping dans vos favoris.</p></div>
+    <div class="feat" style="--c:var(--guide)"><span class="tag">Image figée</span><p>Si une chaîne se fige, Zaphir passe tout seul sur une autre qualité de la même chaîne.</p></div>
+    <div class="feat" style="--c:var(--home)"><span class="tag">Accueil</span><p>Reprendre un film ou un épisode, retrouver favoris et chaînes récentes.</p></div>
+  </div>
+</section>
+
+<section id="installer">
   <h2>Installer</h2>
+  <p class="sub">Deux minutes, sans compte.</p>
   <div class="grid">
-    <div class="card">
-      <h3><span class="dot" style="--c:var(--home)"></span>Sur téléphone ou tablette</h3>
+    <div class="card" style="--c:var(--home)">
+      <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></svg></span>Téléphone ou tablette</h3>
       <ol>
         <li>Touchez <b>Télécharger Zaphir</b> sur cette page.</li>
         <li>Ouvrez le fichier téléchargé. Si Android le demande, autorisez l'installation.</li>
         <li>Ouvrez <b>Zaphir</b> et ajoutez votre source.</li>
       </ol>
     </div>
-    <div class="card">
-      <h3><span class="dot" style="--c:var(--live)"></span>Sur TV, Fire TV ou box</h3>
+    <div class="card" style="--c:var(--live)">
+      <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2.5" y="4" width="19" height="13" rx="2.5"/><path d="M8 21h8"/></svg></span>TV, Fire TV ou box</h3>
       <ol>
         <li>Installez l'app <b>Downloader</b> depuis la boutique de la TV.</li>
         <li>Dans Downloader, tapez cette adresse :<code class="addr">dat00udev-sys.github.io/dat00u-distribution</code></li>
         <li>Choisissez <b>Télécharger Zaphir</b>, autorisez l'installation quand la TV le demande, puis confirmez.</li>
       </ol>
     </div>
-    <div class="card">
-      <h3><span class="dot" style="--c:var(--guide)"></span>Ouvrir cette page sur un téléphone</h3>
+    <div class="card" style="--c:var(--guide)">
+      <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2M18 14h2v2M14 18v2h6"/></svg></span>Ouvrir sur un téléphone</h3>
       <div class="qr">
-        <svg role="img" aria-label="QR code de cette page" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" class="segno"><path fill="#f6faff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#070f19" d="M2 2.5h7m3 0h1m1 0h1m3 0h1m1 0h2m2 0h2m2 0h7m-33 1h1m5 0h1m3 0h1m4 0h1m2 0h1m1 0h2m2 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m6 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h8m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m2 0h2m4 0h1m2 0h3m1 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m3 0h1m1 0h1m1 0h7m-25 1h1m1 0h5m3 0h1m2 0h2m2 0h1m1 0h2m1 0h1m3 0h5m-29 1h2m1 0h1m1 0h4m1 0h2m3 0h5m1 0h2m1 0h2m1 0h2m1 0h1m-31 1h2m2 0h1m1 0h2m3 0h3m1 0h1m2 0h1m3 0h3m1 0h1m1 0h2m-32 1h1m2 0h1m6 0h2m1 0h1m3 0h2m2 0h1m2 0h2m2 0h3m-31 1h1m3 0h4m1 0h3m2 0h3m2 0h1m2 0h1m2 0h1m1 0h3m1 0h1m-32 1h1m1 0h2m3 0h3m5 0h1m2 0h2m1 0h3m2 0h2m2 0h3m-33 1h1m1 0h3m1 0h3m1 0h3m1 0h4m3 0h2m1 0h3m2 0h3m-32 1h1m1 0h2m3 0h2m1 0h1m3 0h2m3 0h3m3 0h2m2 0h2m-30 1h1m1 0h4m1 0h1m2 0h3m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h3m2 0h1m-33 1h1m2 0h1m1 0h1m1 0h1m1 0h2m5 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-33 1h1m2 0h1m1 0h4m2 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h2m1 0h2m-30 1h1m2 0h1m9 0h2m2 0h1m1 0h2m4 0h6m-32 1h3m1 0h4m1 0h1m2 0h3m2 0h1m3 0h1m2 0h1m2 0h2m1 0h2m-33 1h4m3 0h3m2 0h1m2 0h3m1 0h5m2 0h1m2 0h2m1 0h1m-33 1h1m1 0h1m3 0h2m1 0h1m1 0h2m1 0h1m3 0h1m1 0h3m2 0h1m1 0h1m2 0h2m-32 1h1m1 0h4m2 0h1m1 0h3m1 0h1m1 0h1m2 0h6m2 0h1m2 0h1m-31 1h1m1 0h1m1 0h4m3 0h1m1 0h1m2 0h2m1 0h2m1 0h1m1 0h6m1 0h1m-24 1h1m1 0h1m1 0h2m2 0h2m1 0h6m3 0h1m1 0h1m1 0h1m-33 1h7m6 0h3m1 0h1m2 0h5m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h2m2 0h2m1 0h1m1 0h2m1 0h2m1 0h2m3 0h5m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h6m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h4m1 0h3m2 0h1m1 0h3m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h3m3 0h1m1 0h1m1 0h1m1 0h2m2 0h1m-31 1h1m5 0h1m2 0h2m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m-31 1h7m1 0h1m3 0h1m1 0h2m1 0h1m1 0h1m3 0h3m1 0h1m1 0h1m1 0h1"/></svg>
+        <svg role="img" aria-label="QR code de cette page" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" class="segno"><path fill="#f6faff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#1C2937" d="M2 2.5h7m3 0h1m1 0h1m3 0h1m1 0h2m2 0h2m2 0h7m-33 1h1m5 0h1m3 0h1m4 0h1m2 0h1m1 0h2m2 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m6 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h8m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m2 0h2m4 0h1m2 0h3m1 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m3 0h1m1 0h1m1 0h7m-25 1h1m1 0h5m3 0h1m2 0h2m2 0h1m1 0h2m1 0h1m3 0h5m-29 1h2m1 0h1m1 0h4m1 0h2m3 0h5m1 0h2m1 0h2m1 0h2m1 0h1m-31 1h2m2 0h1m1 0h2m3 0h3m1 0h1m2 0h1m3 0h3m1 0h1m1 0h2m-32 1h1m2 0h1m6 0h2m1 0h1m3 0h2m2 0h1m2 0h2m2 0h3m-31 1h1m3 0h4m1 0h3m2 0h3m2 0h1m2 0h1m2 0h1m1 0h3m1 0h1m-32 1h1m1 0h2m3 0h3m5 0h1m2 0h2m1 0h3m2 0h2m2 0h3m-33 1h1m1 0h3m1 0h3m1 0h3m1 0h4m3 0h2m1 0h3m2 0h3m-32 1h1m1 0h2m3 0h2m1 0h1m3 0h2m3 0h3m3 0h2m2 0h2m-30 1h1m1 0h4m1 0h1m2 0h3m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h3m2 0h1m-33 1h1m2 0h1m1 0h1m1 0h1m1 0h2m5 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-33 1h1m2 0h1m1 0h4m2 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h2m1 0h2m-30 1h1m2 0h1m9 0h2m2 0h1m1 0h2m4 0h6m-32 1h3m1 0h4m1 0h1m2 0h3m2 0h1m3 0h1m2 0h1m2 0h2m1 0h2m-33 1h4m3 0h3m2 0h1m2 0h3m1 0h5m2 0h1m2 0h2m1 0h1m-33 1h1m1 0h1m3 0h2m1 0h1m1 0h2m1 0h1m3 0h1m1 0h3m2 0h1m1 0h1m2 0h2m-32 1h1m1 0h4m2 0h1m1 0h3m1 0h1m1 0h1m2 0h6m2 0h1m2 0h1m-31 1h1m1 0h1m1 0h4m3 0h1m1 0h1m2 0h2m1 0h2m1 0h1m1 0h6m1 0h1m-24 1h1m1 0h1m1 0h2m2 0h2m1 0h6m3 0h1m1 0h1m1 0h1m-33 1h7m6 0h3m1 0h1m2 0h5m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h2m2 0h2m1 0h1m1 0h2m1 0h2m1 0h2m3 0h5m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h6m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h4m1 0h3m2 0h1m1 0h3m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h3m3 0h1m1 0h1m1 0h1m1 0h2m2 0h1m-31 1h1m5 0h1m2 0h2m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m-31 1h7m1 0h1m3 0h1m1 0h2m1 0h1m1 0h1m3 0h3m1 0h1m1 0h1m1 0h1"/></svg>
         <p>Scannez ce code avec l'appareil photo du téléphone pour ouvrir cette page.</p>
       </div>
     </div>
@@ -114,19 +224,20 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);f
 
 <section>
   <h2>Bon à savoir</h2>
+  <p class="sub">&nbsp;</p>
   <div class="grid">
-    <div class="card">
-      <h3><span class="dot" style="--c:var(--series)"></span>Mises à jour automatiques</h3>
+    <div class="card" style="--c:var(--series)">
+      <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 1-2.3-5.6M20 4v5h-5"/></svg></span>Mises à jour automatiques</h3>
       <p>Zaphir vous prévient quand une nouvelle version existe. Sur TV, il la télécharge et l'installe lui-même.</p>
       <p>Installez toujours <b>par-dessus</b>, sans désinstaller : vos sources, favoris et réglages sont conservés.</p>
     </div>
-    <div class="card">
-      <h3><span class="dot" style="--c:var(--fav)"></span>Vos données restent chez vous</h3>
+    <div class="card" style="--c:var(--fav)">
+      <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg></span>Vos données restent chez vous</h3>
       <p>Vos identifiants sont chiffrés sur l'appareil. Aucun compte, aucune publicité, aucune statistique.</p>
       <p>L'app contacte seulement vos sources, et ce site pour vérifier les mises à jour.</p>
     </div>
-    <div class="card warn">
-      <h3><span class="dot" style="--c:var(--movies)"></span>Aucune chaîne fournie</h3>
+    <div class="card" style="--c:var(--movies)">
+      <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></svg></span>Aucune chaîne fournie</h3>
       <p>Zaphir ne fournit ni chaîne, ni film, ni série. Il lit seulement la source que vous ajoutez : abonnement Xtream, lien ou fichier M3U.</p>
       <p>Utilisez uniquement une source à laquelle vous avez droit.</p>
     </div>
@@ -137,7 +248,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);f
 <section class="langs">
   <div class="card" lang="en">
     <h3>English</h3>
-    <p>Zaphir is a free, ad-free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It provides no content: it plays only the source you add. On a TV, install the Downloader app and type <b>dat00udev-sys.github.io/dat00u-distribution</b>.</p>
+    <p><b>Zap, find your sapphire.</b> Zaphir is a free, ad-free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It provides no content: it plays only the source you add. On a TV, install the Downloader app and type <b>dat00udev-sys.github.io/dat00u-distribution</b>.</p>
   </div>
   <div class="card" lang="ar" dir="rtl">
     <h3>العربية</h3>
@@ -145,15 +256,17 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);f
   </div>
 </section>
 </main>
+</div>
 
 <footer>
-  <span>Zaphir</span>
-  <a href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/INSTALLATION.md">Guide d'installation</a>
-  <a href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/CHANGELOG.md">Nouveautés</a>
-  <a href="https://github.com/dat00udev-sys/dat00u-distribution/releases">Toutes les versions</a>
-  <a href="https://github.com/dat00udev-sys/dat00u-distribution/issues">Signaler un problème</a>
+  <div class="wrap">
+    <span class="brand"><svg aria-hidden="true"><use href="#z"/></svg><b style="font-size:15px">Zaphir</b><em>Zappez, trouvez votre saphir.</em></span>
+    <a href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/INSTALLATION.md">Guide d'installation</a>
+    <a href="https://github.com/dat00udev-sys/dat00u-distribution/blob/main/CHANGELOG.md">Nouveautés</a>
+    <a href="https://github.com/dat00udev-sys/dat00u-distribution/releases">Toutes les versions</a>
+    <a href="https://github.com/dat00udev-sys/dat00u-distribution/issues">Signaler un problème</a>
+  </div>
 </footer>
-</div>
 
 <script>
 // The button always follows the published version: it reads versions.json (served next to this page). Display only:

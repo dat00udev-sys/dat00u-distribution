@@ -8,7 +8,7 @@ Zaphir (by dat00u, anciennement Dat00u) est un lecteur IPTV gratuit et sans publ
 
 **L'application ne fournit aucune chaîne, aucun film ni aucune série.** Elle lit seulement la source que vous ajoutez vous-même : abonnement Xtream, lien ou fichier M3U. Utilisez uniquement une source à laquelle vous avez droit.
 
-Version disponible : **0.14.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.14.0/Zaphir-0.14.0.apk). Aucun compte GitHub n'est nécessaire.
+Version disponible : **0.15.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.15.0/Zaphir-0.15.0.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 
@@ -17,7 +17,7 @@ Version disponible : **0.14.0 · Android 8 et suivants · Français, English, ا
 | Écran | À quoi il sert |
 |---|---|
 | Accueil | Reprendre un film ou un épisode, retrouver favoris et chaînes récentes. |
-| TV | Parcourir les chaînes par dossier et changer de chaîne sans couper l'image. Le menu de la chaîne affiche les programmes du jour. Les logos des chaînes sont trouvés automatiquement, et une chaîne proposée en plusieurs qualités n'a qu'une tuile. En plein écran, une barre discrète montre la chaîne, sa qualité et les chaînes voisines, même sans guide des programmes. |
+| TV | Parcourir les chaînes par dossier ; en plein écran, la liste des chaînes s'ouvre par-dessus l'image (←) pour changer de chaîne ou de dossier sans la quitter. Le menu de la chaîne affiche les programmes du jour. Les logos des chaînes sont trouvés automatiquement, et une chaîne proposée en plusieurs qualités n'a qu'une tuile. En plein écran, une barre discrète montre la chaîne, sa qualité et les chaînes voisines, même sans guide des programmes. |
 | Films et Séries | Dossiers en liste ou en mosaïque, fiches avec saisons et épisodes, reprise de lecture. |
 | Favoris | Vos chaînes, films et séries préférés au même endroit. |
 | Réglages | Langue, thème, ordre et visibilité des dossiers, contrôle parental, sources. |

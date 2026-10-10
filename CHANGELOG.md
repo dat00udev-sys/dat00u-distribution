@@ -1,5 +1,17 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.15.0 — la liste des chaînes sur l'image
+
+- **Liste des chaînes sur l'image (TV) :** une chaîne s'ouvre directement en plein écran, avec la liste de son dossier par-dessus l'image, sur un quart de l'écran. Elle remplace la vue réduite (vidéo en petit à côté de la liste).
+  - ↑ ↓ choisissent une chaîne, ← → changent de dossier, OK lance la chaîne et ferme la liste.
+  - En plein écran, ← rouvre la liste sur la chaîne regardée ; Retour la ferme, puis ramène à la mosaïque sur la chaîne regardée.
+  - Chaque ligne montre le numéro, le logo, le nom et le programme en cours (ou le nombre de qualités) ; la chaîne qui joue a un point rouge.
+  - Sur une tablette, un bouton « Chaînes » dans les commandes ouvre la liste.
+- **Favoris :** « Zapper seulement dans les favoris » est désormais activé par défaut, sur tous les appareils ; il reste désactivable dans les réglages.
+- **Ouverture :** l'écran du logo reste deux secondes et ne laisse plus apparaître un instant l'écran de connexion avant l'accueil.
+
+**English — 0.15.0:** on TV, channels open full screen with the channel list over the picture (replacing the reduced view); zapping through favourites is on by default; the logo screen stays two seconds and no longer flashes the connection screen.
+
 ## 0.14.0 — nouveau logo, image figée
 
 - **Nouveau logo :** un Z à facettes, menthe et bleu saphir, autour d'un triangle de lecture, et le slogan **« Zappez, trouvez votre saphir. »**. Il apparaît sur l'icône de l'appli, la bannière Android TV, l'écran d'ouverture et le menu. L'écran d'ouverture reste au moins une seconde et demie pour qu'on le voie.
