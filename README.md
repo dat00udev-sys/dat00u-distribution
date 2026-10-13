@@ -6,9 +6,11 @@
 
 Zaphir (by dat00u, anciennement Dat00u) est un lecteur IPTV gratuit et sans publicité pour Android TV, Google TV, Fire TV, les box Android, les téléphones et les tablettes.
 
-**L'application ne fournit aucune chaîne, aucun film ni aucune série.** Elle lit seulement la source que vous ajoutez vous-même : abonnement Xtream, lien ou fichier M3U. Utilisez uniquement une source à laquelle vous avez droit.
+**L'application ne vend ni ne fournit d'abonnement, de film ni de série.** Elle lit la source que vous ajoutez vous-même : abonnement Xtream, lien ou fichier M3U. Utilisez uniquement une source à laquelle vous avez droit.
 
-Version disponible : **0.16.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.16.0/Zaphir-0.16.0.apk). Aucun compte GitHub n'est nécessaire.
+**Essayer sans abonnement :** sur l'écran de connexion, « Essayer sans abonnement » ouvre une démo de chaînes gratuites (France, infos, monde arabe). Elles viennent de la liste publique [Free-TV/IPTV](https://github.com/Free-TV/IPTV), qui ne recense que des chaînes gratuites et légales ; Zaphir n'en héberge aucune.
+
+Version disponible : **0.17.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.17.0/Zaphir-0.17.0.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 
@@ -43,4 +45,4 @@ Pour signaler un problème, ouvrez une issue en indiquant :
 
 **Ne joignez jamais un identifiant, un mot de passe ni l'adresse de votre source.**
 
-**English:** Zaphir is a free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It provides no content: it only plays the source you add yourself. French, English and Arabic.
+**English:** Zaphir is a free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It sells no subscription and hosts no content: it plays the source you add yourself, or a demo of free channels from the public [Free-TV/IPTV](https://github.com/Free-TV/IPTV) list. French, English and Arabic.

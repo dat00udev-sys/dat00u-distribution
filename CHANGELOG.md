@@ -1,5 +1,15 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.17.0 — essayer sans abonnement
+
+- **Essayer sans abonnement :** sur l'écran de connexion, sous Xtream, Lien M3U et Fichier, le bouton « Essayer sans abonnement » ouvre une démo de chaînes gratuites.
+  - Les chaînes viennent de la liste publique [Free-TV/IPTV](https://github.com/Free-TV/IPTV), qui ne recense que des chaînes gratuites et légales ; Zaphir n'en héberge aucune et la lit à son adresse, donc ses corrections arrivent sans nouvelle version.
+  - Huit dossiers : France, Infos, Infos (arabe), Liban, Émirats, Égypte, Qatar, Arabie saoudite. Les liens YouTube, que le lecteur ne peut pas lire, sont retirés.
+  - Une capsule « Démo » rappelle d'où viennent les chaînes et où ajouter les vôtres (Réglages › Sources). La démo se retire comme une autre source, et le bouton disparaît une fois qu'elle est ajoutée.
+  - Comme toute liste publique, certaines chaînes peuvent être en panne ou bloquées selon le pays : le message habituel s'affiche alors.
+
+**English — 0.17.0:** "Try without a subscription" on the connection screen opens a demo of free channels from the public Free-TV/IPTV list (France, news, Arab world), read at its address; YouTube links are left out and a "Demo" capsule says where to add your own source.
+
 ## 0.16.0 — une liste des chaînes plus simple
 
 - **Retour remonte d'un étage (TV) :** on ne se perd plus dans la liste des chaînes.
