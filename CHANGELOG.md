@@ -1,5 +1,33 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.18.0 — plus rapide, réglages et recherche refaits
+
+- **Grosses listes plus rapides.** Mesuré sur une liste de 75 000 contenus : réouverture en 8 à 15 s au lieu de 27 s, premier chargement en 22 s au lieu de 32 s, et l'écran ne se fige plus pendant la préparation.
+  - La liste enregistrée sert une semaine (au lieu de 12 heures) et se met à jour en arrière-plan.
+  - Pendant l'attente, l'écran dit où en est le chargement : « Téléchargement… 4,2 Mo », « Lecture… 37 888 contenus », « Préparation de la liste… ».
+  - Un téléchargement coupé est relancé une fois automatiquement.
+  - 19 Mo de mémoire en moins : les textes répétés d'un contenu à l'autre ne sont plus gardés en double.
+- **Réglages (TV) :**
+  - ← → parcourent les choix et **OK** choisit : une flèche ne change plus un réglage toute seule. ← avant le premier choix revient au menu, sur la catégorie affichée.
+  - Plus de grand titre : un fil « Réglages › Lecture ». L'aide s'affiche sur la ligne sélectionnée, et « D'autres réglages plus bas » quand la page continue.
+  - La reconnexion et la mémoire tampon rejoignent « Lecture », à côté du profil de lecture ; « Direct et guide » devient « Chaînes TV ».
+  - Sources : la source utilisée en tête, avec son nombre de chaînes, de films et de séries ; « Retirer » devient une petite icône, qui demande toujours confirmation.
+- **Recherche :**
+  - Les meilleurs résultats d'abord : le nom de la chaîne ou du film, puis le dossier, le genre, les acteurs et le résumé.
+  - Une rangée par type (chaînes, films, séries), avec « Tout voir » ; sous un résultat trouvé autrement que par son nom, la raison (« Dossier FR | Sport », « Genre : Sport »…).
+  - Les filtres n'apparaissent qu'avec des résultats ; pendant la recherche, « Recherche dans … contenus » (le nombre de votre liste) remplace « 0 résultat ».
+- **Plus clair :**
+  - Les onglets Films et Séries disparaissent quand la source n'en a pas ; l'accueil n'affiche plus de bannière vide et rappelle la source et son nombre de chaînes.
+  - Le direct est un point rouge dans le coin : l'étiquette cachait le nom des chaînes sans logo.
+  - Le bouton d'une série lance l'épisode suivant non vu et le nomme (« Reprendre · S1 · E3 »).
+  - Sur TV, à la première chaîne regardée, un rappel des touches (OK, Retour, ↑ ↓) s'affiche une seule fois.
+  - Ajout de source : le nom du serveur est proposé quand « Mon abonnement » est déjà pris ; un bouton inactif est gris.
+- **Grandes listes de dossiers (TV) :** quand la plupart des dossiers commencent par un pays (« FR | Sport »), une rangée « Tous · FR · BE · CH… » les filtre.
+- **Téléphone :** les onglets passent en bas de l'écran, avec icônes ; dans le lecteur de films et d'épisodes, glisser à gauche règle la luminosité, à droite le volume.
+- **Corrections :** le message d'une chaîne en panne ne passe plus devant la liste des chaînes ; « Vérifié il y a 2 minutes » sans majuscule au milieu de la phrase ; une liste de plus de 48 Mo explique quoi demander au fournisseur.
+
+**English — 0.18.0:** much faster with large lists (reopening in 8–15 s instead of 27 s on a 75,000-item list), loading steps shown. TV settings: arrows move over the choices and OK picks, so an arrow never changes a setting by itself; a lighter page with help on the selected row. Search ranks name matches first, shows one row per type with "See all" and says why a result matched. Country filters on long folder lists, bottom tabs and brightness/volume swipes on phones, and several fixes.
+
 ## 0.17.0 — essayer sans abonnement
 
 - **Essayer sans abonnement :** sur l'écran de connexion, sous Xtream, Lien M3U et Fichier, le bouton « Essayer sans abonnement » ouvre une démo de chaînes gratuites.

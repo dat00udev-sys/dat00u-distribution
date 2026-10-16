@@ -10,7 +10,7 @@ Zaphir (by dat00u, anciennement Dat00u) est un lecteur IPTV gratuit et sans publ
 
 **Essayer sans abonnement :** sur l'écran de connexion, « Essayer sans abonnement » ouvre une démo de chaînes gratuites (France, infos, monde arabe). Elles viennent de la liste publique [Free-TV/IPTV](https://github.com/Free-TV/IPTV), qui ne recense que des chaînes gratuites et légales ; Zaphir n'en héberge aucune.
 
-Version disponible : **0.17.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.17.0/Zaphir-0.17.0.apk). Aucun compte GitHub n'est nécessaire.
+Version disponible : **0.18.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.18.0/Zaphir-0.18.0.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 
@@ -22,7 +22,8 @@ Version disponible : **0.17.0 · Android 8 et suivants · Français, English, ا
 | TV | Parcourir les chaînes par dossier ; en plein écran, Retour ouvre la liste des chaînes par-dessus l'image, puis la liste des dossiers : on change de chaîne ou de dossier sans quitter l'image. Le menu de la chaîne affiche les programmes du jour. Les logos des chaînes sont trouvés automatiquement, et une chaîne proposée en plusieurs qualités n'a qu'une tuile. En plein écran, une barre discrète montre la chaîne, sa qualité et les chaînes voisines, même sans guide des programmes. |
 | Films et Séries | Dossiers en liste ou en mosaïque, fiches avec saisons et épisodes, reprise de lecture. |
 | Favoris | Vos chaînes, films et séries préférés au même endroit. |
-| Réglages | Langue, thème, ordre et visibilité des dossiers, contrôle parental, sources. |
+| Recherche | Une chaîne, un film, une série ou un acteur : les meilleurs résultats d'abord, une rangée par type. |
+| Réglages | Langue, thème, ordre et visibilité des dossiers, contrôle parental, sources. À la télécommande, les flèches parcourent les choix et OK choisit. |
 
 ## Vos données sur votre appareil
 
