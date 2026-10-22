@@ -1,5 +1,20 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.19.0 — le guide des programmes pour toutes les sources
+
+- **Listes M3U :** une liste qui indique son guide des programmes (fichier XMLTV, `url-tvg` ou `x-tvg-url`) l'affiche maintenant, sans rien régler : le programme en cours sous chaque chaîne, avec sa progression, dans la mosaïque, la liste sur l'image et le menu de la chaîne (en cours, à suivre, « Programmes »).
+- **Démo :** le guide aussi. Parmi la centaine de fichiers que la liste Free-TV indique, seuls ceux des pays de ses chaînes sont lus (six au plus).
+- **Réglages › Chaînes TV › Guide des programmes :**
+  - l'état du guide : nombre de chaînes trouvées, heure de mise à jour, fichiers qui n'ont pas pu être lus ; OK le télécharge de nouveau ;
+  - deux guides publics de [XMLTV Fr](https://xmltvfr.fr), désactivés tant que vous ne les choisissez pas : « TNT » (0,7 Mo par jour) et « France » (environ 400 chaînes, 9 Mo par jour) ;
+  - « Ajouter l'adresse d'un guide » : celui de votre fournisseur ou un autre guide public (.xml ou .xml.gz).
+- **Abonnements Xtream :** les programmes viennent toujours du serveur ; un guide ajouté complète les chaînes qui n'en ont pas.
+- **Les chaînes sont retrouvées** par leur identifiant de guide, sinon par leur nom, comme pour les logos ; un nom trop courant (« Sport 1 ») ne suffit pas, et le pays écrit avec le nom doit être le bon.
+- **Léger :** le guide est téléchargé au plus une fois par jour, en arrière-plan, et gardé sur l'appareil ; si le site est en panne, celui de la veille reste. La journée à venir de chaque chaîne est gardée, avec une limite de taille et de mémoire pour les petites box.
+- **Site et présentation :** la liste de ce que l'application contacte est complétée (annuaire de logos, guides, démo).
+
+**English — 0.19.0:** the TV guide for every source. An M3U list that names its XMLTV guide now shows what's on (and next) everywhere, the demo too. Settings › TV channels › TV guide shows its state and offers two public XMLTV Fr guides (off until chosen) and an "Add a guide address" option; on Xtream, an added guide fills the channels the server leaves empty. Downloaded at most once a day in the background, kept on the device.
+
 ## 0.18.0 — plus rapide, réglages et recherche refaits
 
 - **Grosses listes plus rapides.** Mesuré sur une liste de 75 000 contenus : réouverture en 8 à 15 s au lieu de 27 s, premier chargement en 22 s au lieu de 32 s, et l'écran ne se fige plus pendant la préparation.

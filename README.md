@@ -10,7 +10,7 @@ Zaphir (by dat00u, anciennement Dat00u) est un lecteur IPTV gratuit et sans publ
 
 **Essayer sans abonnement :** sur l'écran de connexion, « Essayer sans abonnement » ouvre une démo de chaînes gratuites (France, infos, monde arabe). Elles viennent de la liste publique [Free-TV/IPTV](https://github.com/Free-TV/IPTV), qui ne recense que des chaînes gratuites et légales ; Zaphir n'en héberge aucune.
 
-Version disponible : **0.18.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.18.0/Zaphir-0.18.0.apk). Aucun compte GitHub n'est nécessaire.
+Version disponible : **0.19.0 · Android 8 et suivants · Français, English, العربية**. [Télécharger l'APK signée](https://github.com/dat00udev-sys/dat00u-distribution/releases/download/v0.19.0/Zaphir-0.19.0.apk). Aucun compte GitHub n'est nécessaire.
 
 [Installer l'application](INSTALLATION.md) · [Nouveautés](CHANGELOG.md)
 
@@ -19,7 +19,7 @@ Version disponible : **0.18.0 · Android 8 et suivants · Français, English, ا
 | Écran | À quoi il sert |
 |---|---|
 | Accueil | Reprendre un film ou un épisode, retrouver favoris et chaînes récentes. |
-| TV | Parcourir les chaînes par dossier ; en plein écran, Retour ouvre la liste des chaînes par-dessus l'image, puis la liste des dossiers : on change de chaîne ou de dossier sans quitter l'image. Le menu de la chaîne affiche les programmes du jour. Les logos des chaînes sont trouvés automatiquement, et une chaîne proposée en plusieurs qualités n'a qu'une tuile. En plein écran, une barre discrète montre la chaîne, sa qualité et les chaînes voisines, même sans guide des programmes. |
+| TV | Parcourir les chaînes par dossier ; en plein écran, Retour ouvre la liste des chaînes par-dessus l'image, puis la liste des dossiers : on change de chaîne ou de dossier sans quitter l'image. Le programme en cours s'affiche sous chaque chaîne et dans son menu : il vient du serveur Xtream ou du guide indiqué par la liste (XMLTV), et un guide public peut être ajouté dans les réglages. Les logos des chaînes sont trouvés automatiquement, et une chaîne proposée en plusieurs qualités n'a qu'une tuile. En plein écran, une barre discrète montre la chaîne, sa qualité et les chaînes voisines, même sans guide des programmes. |
 | Films et Séries | Dossiers en liste ou en mosaïque, fiches avec saisons et épisodes, reprise de lecture. |
 | Favoris | Vos chaînes, films et séries préférés au même endroit. |
 | Recherche | Une chaîne, un film, une série ou un acteur : les meilleurs résultats d'abord, une rangée par type. |
@@ -27,7 +27,14 @@ Version disponible : **0.18.0 · Android 8 et suivants · Français, English, ا
 
 ## Vos données sur votre appareil
 
-Les identifiants de vos sources sont chiffrés sur l'appareil. L'application ne contacte que les serveurs de vos sources et ce dépôt, pour vérifier les mises à jour. Elle n'envoie aucune donnée personnelle, n'affiche aucune publicité et ne fait aucune statistique.
+Les identifiants de vos sources sont chiffrés sur l'appareil. L'application ne contacte que :
+- les serveurs de vos sources, et les adresses d'images et de guide des programmes que vos sources indiquent ;
+- l'annuaire public de logos [iptv-org](https://github.com/iptv-org/api) et les sites qui hébergent ces logos (réglage « Logos depuis internet ») ;
+- les guides des programmes que vous ajoutez dans les réglages, par exemple [XMLTV Fr](https://xmltvfr.fr) ;
+- la liste publique [Free-TV](https://github.com/Free-TV/IPTV), si vous essayez la démo, et les guides qu'elle indique ;
+- ce dépôt, pour vérifier les mises à jour.
+
+Elle n'envoie aucune donnée personnelle, n'affiche aucune publicité et ne fait aucune statistique.
 
 ## Télécharger et mettre à jour
 
@@ -46,4 +53,4 @@ Pour signaler un problème, ouvrez une issue en indiquant :
 
 **Ne joignez jamais un identifiant, un mot de passe ni l'adresse de votre source.**
 
-**English:** Zaphir is a free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It sells no subscription and hosts no content: it plays the source you add yourself, or a demo of free channels from the public [Free-TV/IPTV](https://github.com/Free-TV/IPTV) list. French, English and Arabic.
+**English:** Zaphir is a free IPTV player for Android TV, Google TV, Fire TV, Android boxes, phones and tablets. It sells no subscription and hosts no content: it plays the source you add yourself, or a demo of free channels from the public [Free-TV/IPTV](https://github.com/Free-TV/IPTV) list. The TV guide comes from your source, or from a public XMLTV guide you choose. French, English and Arabic.
