@@ -1,5 +1,15 @@
 # Nouveautés de Zaphir (anciennement Dat00u)
 
+## 0.20.0 — EPGShare par pays
+
+- **Réglages › Chaînes TV › Guide des programmes › « EPGShare par pays » :** une liste à cocher des guides de [EPGShare](https://epgshare01.online), un fichier par pays : France, Belgique, Suisse, Luxembourg, Canada, Royaume-Uni, Irlande, États-Unis, Allemagne, Autriche, Italie, Espagne, Portugal, Pays-Bas, Turquie, Émirats, Arabie saoudite, Égypte, ainsi qu'Al Jazeera et beIN.
+  - Aucun pays n'est coché au départ ; chaque pays ajoute un fichier de 0,1 à 6 Mo, téléchargé au plus une fois par jour.
+  - Les noms des pays suivent la langue de l'application.
+  - EPGShare n'a rien pour la Tunisie, le Maroc, l'Algérie, le Qatar ni le Liban : pour ces chaînes, le guide de votre fournisseur reste le meilleur.
+- **Démo :** elle lit maintenant le guide EPGShare des pays de ses chaînes, à jour, au lieu de la liste de fichiers indiquée par Free-TV, en partie périmée. Le programme s'affiche pour deux fois plus de chaînes (75 au lieu de 34), notamment celles des Émirats.
+
+**English — 0.20.0:** "EPGShare by country" in Settings › TV channels › TV guide: tick the countries of your channels (none by default; country names in the app's language). The demo now reads up-to-date EPGShare files for its countries and shows what's on for twice as many channels.
+
 ## 0.19.0 — le guide des programmes pour toutes les sources
 
 - **Listes M3U :** une liste qui indique son guide des programmes (fichier XMLTV, `url-tvg` ou `x-tvg-url`) l'affiche maintenant, sans rien régler : le programme en cours sous chaque chaîne, avec sa progression, dans la mosaïque, la liste sur l'image et le menu de la chaîne (en cours, à suivre, « Programmes »).
